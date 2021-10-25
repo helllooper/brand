@@ -5,7 +5,7 @@ app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
-   res.render("home"); 
+   res.render("home");
 });
 
 app.get("/about", function(req, res){
@@ -13,13 +13,13 @@ app.get("/about", function(req, res){
 });
 
 app.get("/buy", function(req, res){
-   res.render("buy"); 
+   res.render("buy");
 });
 
 app.get("/contact", function(req, res){
    res.render("contact");
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(/*process.env.PORT*/3000, /*process.env.IP*/"localhost", function(){
     console.log("Server has started");
 });
